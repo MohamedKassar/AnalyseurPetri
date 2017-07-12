@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="388.0" prefWidth="550.0" stylesheets="@../../css/costumstyle/CostumStyle.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="388.0" fitWidth="550.0" layoutX="14.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../../images/splash/splash.png" />
+         </image>
+      </ImageView>
+      <ProgressBar fx:id="progressBar" layoutY="332.0" prefWidth="200.0" progress="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <Label layoutX="7.0" layoutY="367.0" text="chargement ..." />
+      <Label layoutX="158.0" layoutY="203.0" style="-fx-text-fill: black;" text="Edition et analyse ">
+         <font>
+            <Font name="Consolas" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="150.0" layoutY="229.0" style="-fx-text-fill: black;" text="des réseaux de Petri">
+         <font>
+            <Font name="Consolas" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="110.0" layoutY="253.0" style="-fx-text-fill: black;" text=" stochastiques à priorité  ">
+         <font>
+            <Font name="Consolas" size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

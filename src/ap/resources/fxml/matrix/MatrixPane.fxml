@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<fx:root id="MatrixPanel" dividerPositions="0.5" type="SplitPane" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.40">
+   <items>
+      <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="200.0">
+         <items>
+            <VBox alignment="TOP_CENTER">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" minHeight="30.0" text="Matrice d'incidence arrière (Post)" textAlignment="CENTER" VBox.vgrow="NEVER">
+                     <font>
+                        <Font name="Bookman Old Style" size="15.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="postTable" minHeight="200.0" minWidth="300.0" prefHeight="200.0" VBox.vgrow="ALWAYS" />
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" minHeight="30.0" text="Matrice d'incidence" textAlignment="CENTER" VBox.vgrow="NEVER">
+                     <font>
+                        <Font name="Bookman Old Style" size="15.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="incidenceTable" minHeight="200.0" minWidth="300.0" prefHeight="200.0" VBox.vgrow="ALWAYS" />
+               </children>
+            </VBox>
+         </items>
+      </SplitPane>
+      <SplitPane dividerPositions="0.5" orientation="VERTICAL">
+         <items>
+            <VBox alignment="TOP_CENTER">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" minHeight="30.0" text="Matrice d'incidence avant (Pré)" textAlignment="CENTER" VBox.vgrow="NEVER">
+                     <font>
+                        <Font name="Bookman Old Style" size="15.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="preTable" minHeight="200.0" minWidth="300.0" prefHeight="200.0" VBox.vgrow="ALWAYS" />
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" minHeight="30.0" text="Matrice d'inhibition" textAlignment="CENTER" VBox.vgrow="NEVER">
+                     <font>
+                        <Font name="Bookman Old Style" size="15.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="inhTable" minHeight="200.0" minWidth="300.0" prefHeight="200.0" VBox.vgrow="ALWAYS" />
+               </children>
+            </VBox>
+         </items>
+      </SplitPane>
+   </items>
+</fx:root>

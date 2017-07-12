@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="465.0" prefWidth="563.0" style="-fx-background-color: rgba(128,128,128,09);" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="3.0" layoutY="4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="424.0" prefWidth="555.0" style="-fx-border-color: black; -fx-border-radius: 5; -fx-border-style: dotted;" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="4.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/APIcon.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="151.0" prefHeight="150.0" prefWidth="398.0" text="                est une application développée dans un cadre éducatif, issu d’un projet de fin d’étude dont le thème est «un outil graphique pour l’analyse comportementale des réseaux de Petri stochastiques à priorité», № : 074/2016." textAlignment="JUSTIFY" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Consolas" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="152.0" layoutY="-7.0" prefHeight="42.0" prefWidth="249.0" text="Analyseur Petri " textAlignment="JUSTIFY" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Consolas Bold" size="22.0" />
+               </font>
+            </Label>
+            <TextFlow layoutX="12.0" layoutY="229.0" prefHeight="42.0" prefWidth="455.0" textAlignment="JUSTIFY">
+               <children>
+                  <Label prefHeight="42.0" prefWidth="249.0" text="Proposé et encadré par :" textAlignment="JUSTIFY" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Consolas Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="10.0" prefHeight="42.0" prefWidth="203.0" text="Prof. N. GHARBI" textAlignment="JUSTIFY" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Consolas" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </TextFlow>
+            <TextFlow layoutX="12.0" layoutY="259.0" prefHeight="42.0" prefWidth="531.0" textAlignment="JUSTIFY">
+               <children>
+                  <Label prefHeight="42.0" prefWidth="136.0" text="Réalise par :" textAlignment="JUSTIFY" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Consolas Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="10.0" prefHeight="42.0" prefWidth="387.0" text="KASSAR Mohamed Tarek et HAMRARAS Hadjer" textAlignment="JUSTIFY" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Consolas" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </TextFlow>
+            <Label layoutX="12.0" layoutY="286.0" prefHeight="42.0" prefWidth="398.0" text="Licence 3 ISIL section A groupe 01" textAlignment="JUSTIFY" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Consolas" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="214.0" layoutY="379.0" prefHeight="42.0" prefWidth="136.0" text="2015 - 2016" textAlignment="JUSTIFY" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Consolas Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="154.0" prefHeight="76.0" prefWidth="543.0" text="Cette application consiste essentiellement à modéliser des réseaux de Petri stochastiques à priorité  et faire l’étude comportementale de leurs propriétés." textAlignment="JUSTIFY" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Consolas" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="13.0" layoutY="320.0" prefHeight="54.0" prefWidth="531.0" text="Université des sciences et de la technologie Houari Boumediene, Bab Ezzouar Alger Algérie" textAlignment="JUSTIFY" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Consolas" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="4.0" layoutY="313.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="31.0" prefWidth="555.0" style="-fx-border-color: black; -fx-border-radius: 5; -fx-border-style: dotted;" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="4.0">
+         <children>
+            <Label layoutX="116.0" prefHeight="28.0" prefWidth="323.0" text="Icônes téléchargé du site : www.flaticon.com " textAlignment="JUSTIFY" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Consolas" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

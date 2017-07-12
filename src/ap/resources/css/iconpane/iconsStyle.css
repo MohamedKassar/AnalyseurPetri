@@ -1,0 +1,26 @@
+
+/* 
+    Created on : 7 mars 2016, 09:51:05
+    Author     : Tarek
+*/
+
+.icon:pressed{
+    -fx-scale-x: 0.9;
+    -fx-scale-y: 0.9;
+}
+
+.icon:hover{
+    -fx-background-color: rgba(0,0,0,0.25);
+}
+
+.icon{
+    -fx-background-color: rgba(0,0,0,0.10);
+}
+
+.close:hover{
+    -fx-background-color: rgba(0,0,0,0.30);
+}
+
+.close{
+    -fx-background-color: rgba(0,0,0,0.05);
+}

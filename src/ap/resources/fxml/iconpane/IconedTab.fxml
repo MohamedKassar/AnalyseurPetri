@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root id="IconedTab" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50" prefWidth="50" styleClass="icon" stylesheets="@../../css/iconpane/iconsStyle.css" type="AnchorPane" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle fx:id="selectedRect" fill="WHITE" height="5.0" smooth="false" stroke="TRANSPARENT" strokeMiterLimit="0.0" strokeType="INSIDE" visible="false" width="50.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <ImageView fx:id="icon" fitHeight="30.0" fitWidth="30.0" layoutX="9.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="7.0" />
+      <Label fx:id="tooltipLabel" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Label fx:id="closeButton" alignment="TOP_CENTER" contentDisplay="CENTER" graphicTextGap="0.0" minHeight="-Infinity" prefHeight="8.0" prefWidth="8.0" styleClass="close" text="X" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" AnchorPane.leftAnchor="2.0" AnchorPane.topAnchor="2.0">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="6.0" />
+         </font>
+      </Label>
+   </children>
+</fx:root>

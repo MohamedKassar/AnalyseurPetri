@@ -1,0 +1,327 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 31 mars 2016, 14:16:12
+    Author     : Tarek
+*/
+
+.progress-bar > .bar {
+    -fx-background-insets: 1 1 2 1;
+    -fx-padding: 0.20em;
+}
+
+.costumButton{
+    -fx-background-color:  #cccccc;
+    -fx-background-radius: 20;
+}
+
+.costumButton:hover{
+    -fx-scale-x: 0.95;
+    -fx-scale-y: 0.95;
+    -fx-background-color:  #666666;
+}
+
+.transition{
+    -fx-background-color:  #cccccc;
+    -fx-background-radius: 20;
+}
+
+.transition:hover{
+    -fx-background-color:  #666666;
+}
+/*******************************************************************************
+ *                                                                             *
+ * ScrollBar                                                                   *
+ *                                                                             *
+ ******************************************************************************/
+
+
+.scroll-bar .thumb{
+    -fx-background-color: #cdcdcd;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-color: #dadada;
+}
+
+/* The following is not working. Maybe related to RT-10521*/
+.scroll-bar .thumb:pressed {
+    -fx-background-color: #606060;
+}
+
+
+.scroll-bar .track {
+    -fx-background-color: #f0f0f0;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+.scroll-bar .track-background {
+    -fx-background-color: #f0f0f0;
+    -fx-background-insets: 0;
+}
+
+.scroll-bar .increment-button, .scroll-bar .decrement-button {
+    -fx-background-color: #f0f0f0;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+
+    -fx-padding: 0.25em; /* 3 */
+}
+
+.scroll-bar .increment-button:hover, .scroll-bar .decrement-button:hover  {
+    -fx-background-color: #dadada;
+}
+
+.scroll-bar .increment-button:pressed, .scroll-bar .decrement-button:pressed {
+    -fx-background-color: #606060;
+}
+
+.scroll-bar:horizontal .increment-arrow {
+    -fx-background-color: -fx-mark-highlight-color, black;
+    -fx-background-insets: 1 0 -1 0, 0;
+    -fx-padding: 0.5em 0.333333em 0.0em 0.0em; /* 6 4 0 0 */
+    -fx-shape: "M7.626,12.876L4.251,8.751H7.14L11,12.876L7.14,17H4.251L7.626,12.876z";
+}
+
+.scroll-bar:vertical .increment-arrow {
+    -fx-background-color: -fx-mark-highlight-color, black;
+    -fx-background-insets: 1 0 -1 0, 0;
+    -fx-padding: 0.333333em 0.5em 0.0em 0.0em; /* 4 6 0 0 */
+    -fx-shape: "M8.124,13.625l4.125-3.375v2.889l-4.125,3.86L4,13.139V10.25L8.124,13.625z";
+}
+
+.scroll-bar .increment-button:pressed .increment-arrow {
+    -fx-background-color: white, white;
+}
+
+.scroll-bar:horizontal .decrement-arrow {
+    -fx-background-color: -fx-mark-highlight-color, black;
+    -fx-background-insets: 1 0 -1 0, 0;
+    -fx-padding: 0.5em 0.333333em 0.0em 0.0em; /* 6 4 0 0 */
+    -fx-shape: "M11,17H8.111l-3.86-4.124l3.86-4.125H11l-3.375,4.125L11,17z";
+}
+
+.scroll-bar:vertical .decrement-arrow {
+    -fx-background-color: -fx-mark-highlight-color, black;
+    -fx-background-insets: 1 0 -1 0, 0;
+    -fx-padding: 0.333333em 0.5em 0.0em 0.0em; /* 4 6 0 0 */
+    -fx-shape: "M4,17v-2.889l4.124-3.86l4.125,3.86V17l-4.125-3.375L4,17z";
+}
+
+.scroll-bar .decrement-button:pressed .decrement-arrow {
+    -fx-background-color: white, white;
+}
+
+.scroll-bar:disabled {
+    -fx-opacity: 0.4;
+}
+
+
+
+/*******************************************************************************
+ *                                                                             *
+ * ScrollPane                                                                  *
+ *                                                                             *
+ ******************************************************************************/
+
+.scroll-pane {
+    -fx-background-color: grey,-fx-background;
+}
+
+.scroll-pane .corner {
+    -fx-background-color: grey, #f0f0f0;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * Toggle Button                                                               *
+ *                                                                             *
+ ******************************************************************************/
+
+.toggle-button {
+    -fx-border-color: transparent;
+    -fx-padding: 5 22 5 22;   
+    -fx-border-style: null; 
+    -fx-background-radius: 0;
+
+    -fx-background-color: #cccccc;
+
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 11pt;
+    -fx-text-fill: black;
+}
+
+.toggle-button:focused {
+    -fx-border-color: transparent;
+    -fx-border-width: 1;
+    -fx-border-style: segments(1, 1);
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;   
+}
+
+.toggle-button:hover {
+    -fx-border-color: transparent;
+    -fx-background-color: #d8d8d8;
+    -fx-text-fill: black;
+}
+
+.toggle-button:selected {
+    -fx-border-color: transparent;
+    -fx-background-color: #666666;
+    -fx-text-fill: white;
+}
+
+.toggle-button:selected:hover {
+    -fx-border-color: transparent;
+    -fx-background-color: #666;
+    -fx-text-fill: white;
+}
+
+.toggle-button:disabled {
+    -fx-opacity: -fx-disabled-opacity;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * Accordion                                                                   *
+ *                                                                             *
+ ******************************************************************************/
+
+
+
+.titled-pane {
+    -fx-effect: dropshadow(three-pass-box, #9F9F9F, 15, 0, 0, 0);
+    -fx-animated: true;
+    -fx-text-fill: #505050;
+}
+
+.titled-pane > .title  {
+    -fx-background-radius: 0, 0, 0;
+    -fx-font: bold 14px System;
+
+    /* stop the background from being blue on focus */
+    -fx-background-color: ladder(
+        red,
+        black 20%,
+        derive(#d0d0d0,-30%) 30%
+        ), 
+        linear-gradient(
+        to bottom,
+        ladder(#d0d0d0, 
+        derive(#d0d0d0,80%) 60%, 
+        white 82%) 0%,
+        ladder(#d0d0d0, 
+        derive(#d0d0d0,20%) 10%, 
+        derive(#d0d0d0,-10%) 80%) 100%
+        ), linear-gradient(
+        to bottom,
+        derive(#d0d0d0,34%) 0%,
+        derive(#d0d0d0,-18%) 100%
+        );
+}
+
+.titled-pane:focused > .title > .arrow-button .arrow {
+    /* do not highlight the title pane arrow on focus */
+    -fx-background-color: #606060;
+}
+
+.tree-cell:odd {
+    /* shade every other line in a tree view */
+    -fx-background-color: #EEEEEE;
+}
+
+.button {
+    /* buttons do not have rounded corners */
+    -fx-background-radius: 0, 0, 0, 0;
+}
+
+.menu-button {
+    /* the left side of the menu button is not rounded */
+    -fx-background-radius: 0 5 5 0, 0 5 5 0, 0 4 4 0, 0 3 3 0;	
+}
+
+.combo-box-base  {
+    /* the left side of the combo box is not rounded */
+    -fx-background-radius: 0 5 5 0, 0 5 5 0, 0 4 4 0, 0 3 3 0;	
+}
+
+
+/*******************************************************************************
+ *                                                                             *
+ * TableView                                                                   *
+ *                                                                             *
+ ******************************************************************************/
+/*
+.table-view .column-header{
+    -fx-background-color: grey;
+    -fx-border-color: black;
+
+}   
+
+.table-view .column-header .label{
+    -fx-background-color: grey;
+
+}
+
+.table-view .column-header-background {
+    -fx-background-color:  grey;
+
+}
+.table-view > .column-header-background > .filler {
+    -fx-background-color: grey;
+}
+*/
+
+/*******************************************************************************
+ *                                                                             *
+ * Button                                                                      *
+ *                                                                             *
+ ******************************************************************************/
+
+.button {
+    -fx-padding: 5 22 5 22;   
+    -fx-border-style: null; 
+    -fx-background-radius: 0;
+
+    -fx-background-color: #cccccc;
+
+    -fx-font-family: "Consolas";
+    -fx-font-size: 14px;
+    -fx-text-fill: black;
+}
+
+.button:focused {
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-border-style: none;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;   
+}
+
+.button:hover {
+    -fx-background-color: #d8d8d8;
+    -fx-text-fill: black;
+}
+
+.button:selected {
+    -fx-background-color: #666666;
+    -fx-text-fill: white;
+}
+
+.button:selected:hover {
+    -fx-background-color: #666;
+    -fx-text-fill: white;
+}
+
+.button:disabled {
+    -fx-opacity: 0.5;
+}
+
+.button:pressed{
+    -fx-scale-x: 0.95;
+    -fx-scale-y: 0.9;
+    -fx-border-color: transparent;
+}

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root id="AnchorPane" minHeight="400.0" minWidth="640.0" stylesheets="@../../css/costumstyle/CostumStyle.css" type="AnchorPane" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" maxHeight="35.0" minHeight="35.0" prefHeight="35.0" VBox.vgrow="NEVER">
+               <children>
+                  <ToggleButton fx:id="editeurButton" minWidth="100.0" mnemonicParsing="false" text="Editeur">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="group" />
+                     </toggleGroup>
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                  </ToggleButton>
+                  <ToggleButton fx:id="matricesButton" minWidth="100.0" mnemonicParsing="false" text="Matrices" toggleGroup="$group">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                  </ToggleButton>
+                  <ToggleButton fx:id="gmaButton" minWidth="100.0" mnemonicParsing="false" text="Analyse" toggleGroup="$group">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                  </ToggleButton>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <BorderPane fx:id="content" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black; -fx-border-style: solid; -fx-border-width: 0.5;" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" />
+               </VBox.margin>
+            </BorderPane>
+         </children>
+      </VBox>
+   </children>
+</fx:root>

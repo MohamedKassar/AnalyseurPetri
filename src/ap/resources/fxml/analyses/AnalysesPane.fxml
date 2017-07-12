@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import ap.javasource.rdp.analyses.*?>
+
+<fx:root id="AnchorPane" dividerPositions="0.6" type="SplitPane" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+    <items>
+        <BorderPane fx:id="gmaPaneContainer" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black; -fx-border-radius: +4;">
+            <top>
+                <AnchorPane maxHeight="50.0" minHeight="50.0" prefHeight="50.0" BorderPane.alignment="CENTER">
+                    <BorderPane.margin>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                    </BorderPane.margin>
+                    <children>
+                        <Button fx:id="gmaButton" layoutX="59.0" layoutY="13.0" minWidth="500.0" mnemonicParsing="false" text="Construire le graphe d'accessibilité et tester la bornitude" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <font>
+                                <Font name="Consolas" size="14.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </AnchorPane>
+            </top>
+            <padding>
+                <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+            </padding>
+            <center>
+                <VBox fx:id="messageDacc" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Label text="Il faut d'abord construire le graphe d'accessibilité pour tester les propriétés." textAlignment="JUSTIFY" wrapText="true">
+                            <font>
+                                <Font name="Consolas" size="14.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </VBox.margin>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="10.0" text="La construction du graphe d'accessibilité d'un réseau non borné est impossible, car il est infini." textAlignment="JUSTIFY" wrapText="true">
+                            <font>
+                                <Font name="Consolas" size="14.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </VBox.margin>
+                        </Label>
+                    </children>
+                </VBox>
+            </center>
+        </BorderPane>
+        <ScrollPane fitToHeight="true" fitToWidth="true" minWidth="350.0" style="fx-border-color: black; -fx-border-radius: 4;">
+            <content>
+                <VBox alignment="CENTER" maxHeight="1.7976931348623157E308">
+                    <children>
+                        <VBox maxHeight="300.0" minHeight="143.0" rotate="-0.0" style="-fx-border-color: black; -fx-border-radius: +4;" VBox.vgrow="ALWAYS">
+                            <children>
+                                <AnchorPane minHeight="30.0" style="-fx-background-color: rgba(0,0,0,0.1); -fx-background-radius: +4;">
+                                    <children>
+                                        <Label alignment="CENTER" contentDisplay="CENTER" text="Verifier l'accissibilité d'un marquage" textAlignment="JUSTIFY" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <font>
+                                                <Font name="Consolas" size="14.0" />
+                                            </font>
+                                            <padding>
+                                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                            </padding>
+                                        </Label>
+                                    </children>
+                                </AnchorPane>
+                                <AnchorPane maxHeight="40.0" minHeight="40.0" prefHeight="40.0">
+                                    <children>
+                                        <ScrollPane fitToHeight="true" prefHeight="200.0" prefWidth="200.0" vbarPolicy="NEVER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <content>
+                                                <HBox fx:id="checkMarkHBox" disable="true" />
+                                            </content>
+                                        </ScrollPane>
+                                    </children>
+                                </AnchorPane>
+                                <AnchorPane minHeight="30.0" minWidth="325.0">
+                                    <children>
+                                        <Button fx:id="checkMarkButton" disable="true" mnemonicParsing="false" text="Verifier" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <font>
+                                                <Font name="Consolas" size="14.0" />
+                                            </font>
+                                        </Button>
+                                    </children>
+                                </AnchorPane>
+                                <AnchorPane minHeight="40.0" VBox.vgrow="ALWAYS">
+                                    <children>
+                                        <Label fx:id="checkMarkLabel" alignment="CENTER" contentDisplay="CENTER" textAlignment="JUSTIFY" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <font>
+                                                <Font name="Consolas" size="14.0" />
+                                            </font>
+                                            <padding>
+                                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                            </padding>
+                                        </Label>
+                                    </children>
+                                </AnchorPane>
+                            </children>
+                            <VBox.margin>
+                                <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                            </VBox.margin>
+                        </VBox>
+                        <VBox layoutX="11.0" layoutY="153.0" maxHeight="150.0" minHeight="70.0" style="-fx-border-color: black; -fx-border-radius: +4;" VBox.vgrow="ALWAYS">
+                            <children>
+                                <AnchorPane minHeight="30.0" minWidth="325.0">
+                                    <children>
+                                        <Button fx:id="blocageButton" disable="true" mnemonicParsing="false" text="Tester si le réseau est bloqué" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <font>
+                                                <Font name="Consolas" size="14.0" />
+                                            </font>
+                                        </Button>
+                                    </children>
+                                </AnchorPane>
+                                <AnchorPane VBox.vgrow="ALWAYS">
+                                    <children>
+                                        <Label fx:id="blocageLabel" alignment="CENTER" contentDisplay="CENTER" textAlignment="JUSTIFY" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <font>
+                                                <Font name="Consolas" size="14.0" />
+                                            </font>
+                                            <padding>
+                                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                            </padding>
+                                        </Label>
+                                    </children>
+                                </AnchorPane>
+                            </children>
+                            <VBox.margin>
+                                <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                            </VBox.margin>
+                        </VBox>
+                        <VBox maxHeight="150.0" minHeight="70.0" style="-fx-border-color: black; -fx-border-radius: +4;" VBox.vgrow="ALWAYS">
+                            <children>
+                                <AnchorPane minHeight="30.0" minWidth="325.0">
+                                    <children>
+                                        <Button fx:id="vivaciteButton" disable="true" mnemonicParsing="false" text="Tester la vivacité" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <font>
+                                                <Font name="Consolas" size="14.0" />
+                                            </font>
+                                        </Button>
+                                    </children>
+                                </AnchorPane>
+                                <AnchorPane VBox.vgrow="ALWAYS">
+                                    <children>
+                                        <Label fx:id="vivaciteLabel" alignment="CENTER" contentDisplay="CENTER" textAlignment="JUSTIFY" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <font>
+                                                <Font name="Consolas" size="14.0" />
+                                            </font>
+                                            <padding>
+                                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                            </padding>
+                                        </Label>
+                                    </children>
+                                </AnchorPane>
+                            </children>
+                            <VBox.margin>
+                                <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                            </VBox.margin>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="149.0" maxHeight="150.0" minHeight="70.0" style="-fx-border-color: black; -fx-border-radius: +4;" VBox.vgrow="ALWAYS">
+                            <children>
+                                <AnchorPane minHeight="30.0" minWidth="325.0">
+                                    <children>
+                                        <Button fx:id="pseudoButton" disable="true" mnemonicParsing="false" text="Tester la pseudo-vivacité" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <font>
+                                                <Font name="Consolas" size="14.0" />
+                                            </font>
+                                        </Button>
+                                    </children>
+                                </AnchorPane>
+                                <AnchorPane VBox.vgrow="ALWAYS">
+                                    <children>
+                                        <Label fx:id="pseudoLabel" alignment="CENTER" contentDisplay="CENTER" textAlignment="JUSTIFY" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <font>
+                                                <Font name="Consolas" size="14.0" />
+                                            </font>
+                                            <padding>
+                                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                            </padding>
+                                        </Label>
+                                    </children>
+                                </AnchorPane>
+                            </children>
+                            <VBox.margin>
+                                <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                            </VBox.margin>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="249.0" maxHeight="150.0" minHeight="70.0" style="-fx-border-color: black; -fx-border-radius: +4;" VBox.vgrow="ALWAYS">
+                            <children>
+                                <AnchorPane minHeight="30.0" minWidth="325.0">
+                                    <children>
+                                        <Button fx:id="quasiButton" disable="true" mnemonicParsing="false" text="Tester la quasi-vivacité" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <font>
+                                                <Font name="Consolas" size="14.0" />
+                                            </font>
+                                        </Button>
+                                    </children>
+                                </AnchorPane>
+                                <AnchorPane VBox.vgrow="ALWAYS">
+                                    <children>
+                                        <Label fx:id="quasiLabel" alignment="CENTER" contentDisplay="CENTER" textAlignment="JUSTIFY" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <font>
+                                                <Font name="Consolas" size="14.0" />
+                                            </font>
+                                            <padding>
+                                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                            </padding>
+                                        </Label>
+                                    </children>
+                                </AnchorPane>
+                            </children>
+                            <VBox.margin>
+                                <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                            </VBox.margin>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="328.0" maxHeight="150.0" minHeight="70.0" style="-fx-border-color: black; -fx-border-radius: +4;" VBox.vgrow="ALWAYS">
+                            <children>
+                                <AnchorPane minHeight="30.0" minWidth="325.0">
+                                    <children>
+                                        <Button fx:id="conservationButton" disable="true" mnemonicParsing="false" text="Tester la conservation" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <font>
+                                                <Font name="Consolas" size="14.0" />
+                                            </font>
+                                        </Button>
+                                    </children>
+                                </AnchorPane>
+                                <AnchorPane VBox.vgrow="ALWAYS">
+                                    <children>
+                                        <Label fx:id="conservationLabel" alignment="CENTER" contentDisplay="CENTER" textAlignment="JUSTIFY" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <font>
+                                                <Font name="Consolas" size="14.0" />
+                                            </font>
+                                            <padding>
+                                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                            </padding>
+                                        </Label>
+                                    </children>
+                                </AnchorPane>
+                            </children>
+                            <VBox.margin>
+                                <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                            </VBox.margin>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="368.0" maxHeight="150.0" minHeight="70.0" style="-fx-border-color: black; -fx-border-radius: +4;" VBox.vgrow="ALWAYS">
+                            <children>
+                                <AnchorPane minHeight="30.0" minWidth="325.0">
+                                    <children>
+                                        <Button fx:id="reinitButton" disable="true" mnemonicParsing="false" text="Tester la réinitialisation" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <font>
+                                                <Font name="Consolas" size="14.0" />
+                                            </font>
+                                        </Button>
+                                    </children>
+                                </AnchorPane>
+                                <AnchorPane VBox.vgrow="ALWAYS">
+                                    <children>
+                                        <Label fx:id="reinitLabel" alignment="CENTER" contentDisplay="CENTER" textAlignment="JUSTIFY" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <font>
+                                                <Font name="Consolas" size="14.0" />
+                                            </font>
+                                            <padding>
+                                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                            </padding>
+                                        </Label>
+                                    </children>
+                                </AnchorPane>
+                            </children>
+                            <VBox.margin>
+                                <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                            </VBox.margin>
+                        </VBox>
+                        <VBox layoutX="11.0" layoutY="219.0" minHeight="120.0" style="-fx-border-color: black; -fx-border-radius: +4;" VBox.vgrow="ALWAYS">
+                            <children>
+                                <AnchorPane minHeight="30.0" minWidth="325.0">
+                                    <children>
+                                        <Button fx:id="etatAccButton" disable="true" mnemonicParsing="false" text="Trouver les états d'accueil" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <font>
+                                                <Font name="Consolas" size="14.0" />
+                                            </font>
+                                        </Button>
+                                    </children>
+                                </AnchorPane>
+                                <ScrollPane fitToWidth="true" pannable="true" VBox.vgrow="ALWAYS">
+                                    <content>
+                                        <Label fx:id="etatAccLabel" alignment="CENTER" contentDisplay="CENTER" wrapText="true">
+                                            <font>
+                                                <Font name="Consolas" size="14.0" />
+                                            </font>
+                                            <padding>
+                                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                            </padding>
+                                        </Label>
+                                    </content>
+                                </ScrollPane>
+                            </children>
+                            <VBox.margin>
+                                <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                            </VBox.margin>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="285.0" minHeight="120.0" style="-fx-border-color: black; -fx-border-radius: +4;" VBox.vgrow="ALWAYS">
+                            <children>
+                                <AnchorPane minHeight="30.0" minWidth="325.0">
+                                    <children>
+                                        <Button fx:id="etatPuitButton" disable="true" mnemonicParsing="false" text="Trouver les états puits" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <font>
+                                                <Font name="Consolas" size="14.0" />
+                                            </font>
+                                        </Button>
+                                    </children>
+                                </AnchorPane>
+                                <ScrollPane fitToWidth="true" hbarPolicy="NEVER" pannable="true" VBox.vgrow="ALWAYS">
+                                    <content>
+                                        <Label fx:id="etatPuitLabel" alignment="CENTER" contentDisplay="CENTER" wrapText="true">
+                                            <font>
+                                                <Font name="Consolas" size="14.0" />
+                                            </font>
+                                            <padding>
+                                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                            </padding>
+                                        </Label>
+                                    </content>
+                                </ScrollPane>
+                            </children>
+                            <VBox.margin>
+                                <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                            </VBox.margin>
+                        </VBox>
+                    </children>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </VBox>
+            </content>
+        </ScrollPane>
+    </items>
+</fx:root>

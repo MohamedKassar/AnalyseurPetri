@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root id="IconPane" prefHeight="480.0" prefWidth="600.0" type="VBox" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <AnchorPane fx:id="iconContent" VBox.vgrow="ALWAYS" />
+        <AnchorPane maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" style="-fx-background-color: rgba(0,0,0,0.1);" VBox.vgrow="NEVER">
+            <children>
+            <HBox alignment="BOTTOM_LEFT" prefHeight="100.0" prefWidth="200.0" stylesheets="@../../css/iconpane/iconsStyle.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Pane fx:id="homeButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="icon">
+                     <children>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/iconpane/home.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="tooltipHome" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" />
+                     </children>
+                  </Pane>
+                      <ScrollPane fx:id="iconsScrollPane" fitToHeight="true" hbarPolicy="NEVER" minWidth="0.0" prefHeight="50.0" style="-fx-background-color: transparent; -fx-background: transparent;" vbarPolicy="NEVER">
+                          <content>
+                              <HBox fx:id="iconsContainer" alignment="CENTER_LEFT" minWidth="0.0" style="-fx-background-color: transparent;" />
+                          </content>
+                      </ScrollPane>
+                  <Pane fx:id="addTabButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="40.0" styleClass="icon" HBox.hgrow="NEVER">
+                     <children>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/iconpane/add.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="tooltipAdd" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="40.0" />
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Pane>
+               </children>
+            </HBox>
+                <VBox alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="20.0" style="-fx-background-color: rgba(0,0,0,0.15);" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <ImageView fx:id="rightButton" fitHeight="10.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="NEVER">
+                            <image>
+                                <Image url="@../../images/iconpane/right-arrow.png" />
+                            </image>
+                            <VBox.margin>
+                                <Insets bottom="5.0" />
+                            </VBox.margin>
+                        </ImageView>
+                        <ImageView fx:id="leftButton" fitHeight="10.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="NEVER">
+                            <image>
+                                <Image url="@../../images/iconpane/left-arrow.png" />
+                            </image>
+                            <VBox.margin>
+                                <Insets top="5.0" />
+                            </VBox.margin>
+                        </ImageView>
+                    </children>
+                </VBox>
+            </children>
+        </AnchorPane>
+    </children>
+</fx:root>

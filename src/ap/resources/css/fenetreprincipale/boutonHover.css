@@ -1,0 +1,12 @@
+/* 
+    Created on : 2 mars 2016, 09:54:02
+    Author     : Tarek
+*/
+
+.boutons:hover{
+    -fx-background-color: rgba(0,0,0,0.4) ;
+}
+
+.boutonFermer:hover{
+    -fx-background-color: rgba(255,0,0,0.7) ;
+}

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root id="ToolBar" minHeight="500.0" minWidth="260.0" stylesheets="@../../css/costumstyle/CostumStyle.css" type="VBox" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Accordion fx:id="accordion" VBox.vgrow="SOMETIMES">
+        <panes>
+          <TitledPane animated="false" expanded="false" text="Fichier">
+               <content>
+                  <AnchorPane>
+                     <children>
+                        <VBox alignment="TOP_CENTER" layoutX="14.0" layoutY="-34.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutX="10.0" layoutY="293.0" maxHeight="30.0" minHeight="30.0">
+                                 <children>
+                                    <Button fx:id="saveButton" mnemonicParsing="false" text="Enregister" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="1.0" top="1.0" />
+                                 </VBox.margin>
+                              </AnchorPane>
+                              <AnchorPane layoutX="10.0" layoutY="43.0" maxHeight="30.0" minHeight="30.0">
+                                 <children>
+                                    <Button fx:id="saveProjectButton" mnemonicParsing="false" text="Enregistrer sous" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="1.0" top="1.0" />
+                                 </VBox.margin>
+                              </AnchorPane>
+                              <AnchorPane maxHeight="30.0" minHeight="30.0">
+                                 <VBox.margin>
+                                    <Insets bottom="1.0" top="1.0" />
+                                 </VBox.margin>
+                                 <children>
+                                    <Label alignment="CENTER" layoutX="63.0" layoutY="6.0" text="Image" textAlignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <font>
+                                          <Font name="Consolas" size="16.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="10.0" layoutY="10.0" maxHeight="30.0" minHeight="30.0">
+                                 <children>
+                                    <Button fx:id="savePicNetButton" mnemonicParsing="false" text="Capturer le modèle" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="1.0" top="1.0" />
+                                 </VBox.margin>
+                              </AnchorPane>
+                              <AnchorPane layoutX="10.0" layoutY="41.0" maxHeight="30.0" minHeight="30.0">
+                                 <children>
+                                    <Button fx:id="savePicMatButton" mnemonicParsing="false" text="Capturer les matrices" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="1.0" top="1.0" />
+                                 </VBox.margin>
+                              </AnchorPane>
+                              <AnchorPane layoutX="10.0" layoutY="71.0" maxHeight="30.0" minHeight="30.0">
+                                 <children>
+                                    <Button fx:id="savePicGMAButton" mnemonicParsing="false" text="Capturer le GMA" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="1.0" top="1.0" />
+                                 </VBox.margin>
+                              </AnchorPane>
+                              <AnchorPane layoutX="10.0" layoutY="11.0" maxHeight="30.0" minHeight="30.0">
+                                 <children>
+                                    <Label alignment="CENTER" layoutX="63.0" layoutY="6.0" text="XML" textAlignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <font>
+                                          <Font name="Consolas" size="16.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="10.0" layoutY="43.0" maxHeight="30.0" minHeight="30.0">
+                                 <children>
+                                    <Button fx:id="saveXmlNetButton" mnemonicParsing="false" text="Exporter le réseau" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="1.0" top="1.0" />
+                                 </VBox.margin>
+                              </AnchorPane>
+                              <AnchorPane layoutX="10.0" layoutY="107.0" maxHeight="30.0" minHeight="30.0">
+                                 <children>
+                                    <Button fx:id="saveXmlGmaButton" mnemonicParsing="false" text="Exporter le GMA" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="1.0" top="1.0" />
+                                 </VBox.margin>
+                              </AnchorPane>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+          </TitledPane>
+          <TitledPane fx:id="project" animated="false" text="Projet">
+            <content>
+              <AnchorPane>
+                     <children>
+                        <VBox alignment="TOP_CENTER" layoutX="14.0" layoutY="-34.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane maxHeight="30.0" minHeight="30.0">
+                                 <children>
+                                    <Button fx:id="nouveauProjetButton" mnemonicParsing="false" text="Nouveau Projet" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <font>
+                                          <Font name="Consolas" size="12.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="1.0" top="1.0" />
+                                 </VBox.margin>
+                              </AnchorPane>
+                              <AnchorPane layoutX="10.0" layoutY="10.0" maxHeight="30.0" minHeight="30.0">
+                                 <children>
+                                    <Button fx:id="ouvrirButton" mnemonicParsing="false" text="Ouvrir un projet" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="1.0" top="1.0" />
+                                 </VBox.margin>
+                              </AnchorPane>
+                              <AnchorPane maxHeight="30.0" minHeight="30.0">
+                                 <children>
+                                    <Button fx:id="ouvrirGMAButton" mnemonicParsing="false" text="Ouvrir GMA" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="1.0" top="1.0" />
+                                 </VBox.margin>
+                              </AnchorPane>
+                              <AnchorPane layoutX="10.0" layoutY="41.0" maxHeight="30.0" minHeight="30.0">
+                                 <children>
+                                    <Button fx:id="fermerProjectButton" mnemonicParsing="false" text="Fermer" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="1.0" top="1.0" />
+                                 </VBox.margin>
+                              </AnchorPane>
+                              <AnchorPane layoutX="10.0" layoutY="71.0" maxHeight="30.0" minHeight="30.0">
+                                 <children>
+                                    <Button fx:id="fermerToutProjetButton" mnemonicParsing="false" text="Fermer tout" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="1.0" top="1.0" />
+                                 </VBox.margin>
+                              </AnchorPane>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </TitledPane>
+        </panes>
+      </Accordion>
+      <AnchorPane maxHeight="30.0" minHeight="30.0">
+         <children>
+            <Button fx:id="aboutButton" mnemonicParsing="false" text="A propos" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="1.0" top="1.0" />
+         </VBox.margin>
+      </AnchorPane>
+      <AnchorPane layoutX="10.0" layoutY="480.0" maxHeight="30.0" minHeight="30.0">
+         <children>
+            <Button fx:id="exitButton" mnemonicParsing="false" text="Quitter l'application" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="1.0" top="1.0" />
+         </VBox.margin>
+      </AnchorPane>
+      <Region prefHeight="0.0" VBox.vgrow="ALWAYS" />
+   </children>
+</fx:root>
